@@ -13,6 +13,8 @@ Run http://ec2-13-232-29-223.ap-south-1.compute.amazonaws.com/catalog to run the
 ### Instructions to SSH (From Linux)
 1. Create a folder in your home folder by issuing the command `mkdir .ssh`
 2. Create a new file using `nano id_rsa` and paste in the content of the key file provided using Ctrl + Shift + v.
+3. Issue the following commands for the required security changes:
+  `chmod .ssh 700` and `chmod .ssh/id_rsa 600`.
 3. To connect to the server issue the following command in your local terminal (assuming the private key was stored in the file _.ssh/id_rsa_).
 `ssh grader@13.232.29.223 -p 2200 -i .ssh/id_rsa`
 
